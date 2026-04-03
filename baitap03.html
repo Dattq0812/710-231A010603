@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3: Countdown Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-bt3">
+    <h1>Đếm ngược sự kiện</h1>
+    <div class="timer" id="timerDisplay">10:00</div>
+
+    <div class="logic-explain">
+        <strong>Giải thích logic tư duy:</strong>
+        <p>- <strong>Tránh Memory Leak:</strong> Gắn hàm <code>setInterval</code> vào biến, gọi <code>clearInterval(timerInterval)</code> khi hết thời gian để giải phóng bộ nhớ.</p>
+        <p>- <strong>Đồng bộ Hosting:</strong> Khi deploy thực tế, thay vì hardcode 10 phút, nên fetch thời gian từ Server Backend để đảm bảo đồng bộ với mọi người dùng.</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

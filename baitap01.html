@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 1: Danh sách Sản phẩm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-bt1">
+    <div class="container">
+        <h2>Danh sách Sản phẩm</h2>
+        <input type="text" id="searchInput" class="search-box" placeholder="Nhập tên sản phẩm để tìm kiếm...">
+        <div id="productList" class="product-grid"></div>
+
+        <div class="logic-explain">
+            <strong>Giải thích logic tư duy:</strong>
+            <p>- <strong>Xử lý Input:</strong> Chuyển về toLowerCase() để tìm kiếm không phân biệt hoa thường.</p>
+            <p>- <strong>Tối ưu tìm kiếm:</strong> Sử dụng phương thức filter() của Array.</p>
+            <p>- <strong>Bảo mật (Chống Injection):</strong> Sử dụng textContent thay vì innerHTML để chống XSS.</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

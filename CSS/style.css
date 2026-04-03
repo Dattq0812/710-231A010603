@@ -1,0 +1,60 @@
+/* ========================================================
+   CSS TỔNG HỢP (Phân tách theo từng trang)
+======================================================== */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; }
+.logic-explain { background: #fff; padding: 20px; border-radius: 8px; margin-top: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); line-height: 1.6; }
+
+/* 1. TRANG CHỦ (index.html) */
+.page-home { font-family: Arial, sans-serif; background-color: #f4f4f9; color: #333; }
+.page-home header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
+.page-home nav { background-color: #34495e; display: flex; justify-content: center; padding: 10px; flex-wrap: wrap; }
+.page-home nav a { color: white; text-decoration: none; padding: 10px 20px; margin: 5px; background: #2980b9; border-radius: 5px; }
+.page-home nav a:hover { background: #3498db; }
+.page-home .container { padding: 40px; text-align: center; }
+
+/* 2. TRANG LÝ THUYẾT (lythuyet.html) */
+.page-theory { font-family: 'Segoe UI', sans-serif; line-height: 1.6; padding: 20px; background: #fff; }
+.page-theory .container { max-width: 900px; margin: auto; }
+.page-theory h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+.page-theory h2 { color: #2980b9; margin-top: 30px; }
+.page-theory .answer { background: #f9f9f9; padding: 15px; border-left: 4px solid #3498db; margin-bottom: 20px; }
+.page-theory code { background: #e0e0e0; padding: 2px 5px; border-radius: 3px; color: #d35400; }
+
+/* 3. TRANG ĐIỂM DANH (diemdanh.html) */
+.page-attendance { font-family: Arial, sans-serif; padding: 40px; background: #f8f9fa; }
+.page-attendance table { border-collapse: collapse; width: 100%; max-width: 600px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); background: #fff; }
+.page-attendance th, .page-attendance td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+.page-attendance th { background-color: #2c3e50; color: white; }
+.page-attendance h2 { text-align: center; color: #333; margin-bottom: 20px; }
+
+/* 4. BÀI TẬP 1 (baitap01.html) */
+.page-bt1 { font-family: Arial, sans-serif; padding: 20px; background: #f8f9fa; }
+.page-bt1 .container { max-width: 800px; margin: auto; }
+.page-bt1 .search-box { width: 100%; padding: 10px; font-size: 16px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; }
+.page-bt1 .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.page-bt1 .product-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+.page-bt1 .error-msg { color: red; font-weight: bold; text-align: center; grid-column: 1 / -1; }
+
+/* 5. BÀI TẬP 2 (baitap02.html) */
+.page-bt2 { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; background: #eef2f5; }
+.page-bt2 .form-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 400px; margin-bottom: 20px; }
+.page-bt2 .form-group { margin-bottom: 15px; display: flex; flex-direction: column; }
+.page-bt2 label { margin-bottom: 5px; font-weight: bold; color: #333; }
+.page-bt2 input[type="text"], .page-bt2 input[type="email"], .page-bt2 input[type="password"] { padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+.page-bt2 .checkbox-group { display: flex; align-items: center; gap: 10px; flex-direction: row; font-weight: normal; }
+.page-bt2 button { background: #28a745; color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; margin-top: 10px;}
+.page-bt2 button:hover { background: #218838; }
+.page-bt2 .error { color: red; font-size: 12px; margin-top: 5px; display: none; }
+.page-bt2 .logic-explain { max-width: 800px; width: 100%; }
+
+/* 6. BÀI TẬP 3 (baitap03.html) */
+.page-bt3 { font-family: monospace; display: flex; flex-direction: column; align-items: center; background: #2c3e50; color: white; padding-top: 50px; min-height: 100vh;}
+.page-bt3 .timer { font-size: 80px; font-weight: bold; background: #34495e; padding: 20px 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: all 0.3s ease; }
+.page-bt3 .danger { color: #e74c3c; animation: pulse 1s infinite alternate; }
+.page-bt3 .logic-explain { color: #333; max-width: 700px; font-family: Arial, sans-serif; font-size: 15px; }
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 10px #e74c3c; }
+    100% { transform: scale(1.05); box-shadow: 0 0 30px #e74c3c; }
+}
